@@ -1,0 +1,131 @@
+1. Data Preparation (Foundation)
+ Objective:
+
+Prepare and structure both datasets so they can be analyzed correctly.
+
+What Was Done:
+
+Loaded both datasets
+
+Trader dataset (~211K trades)
+
+Sentiment dataset (~2.6K daily records)
+
+Data Cleaning
+
+Checked missing values
+
+Removed duplicates
+
+Verified data types
+
+Handled timestamp format issues
+
+Timestamp Alignment
+
+Converted trade timestamps to daily format
+
+Converted sentiment dates to daily format
+
+Merged both datasets on Date
+
+Feature Engineering
+Created analytical metrics:
+
+Daily PnL per account
+
+Win rate (profitable trades %)
+
+Average trade size (Size USD)
+
+Trade frequency per day
+
+Long/Short ratio
+
+ Outcome:
+
+A clean, merged dataset where each trade contains its corresponding market sentiment.
+
+2. Analysis (Core Insights)
+ Objective:
+
+Understand how performance and behavior change across Fear vs Greed conditions.
+
+2.1Performance Differences
+
+Greed shows highest average PnL.
+
+Extreme Greed reduces performance (possible overconfidence).
+
+Win rate improves in positive sentiment conditions.
+
+Volatility (PnL std deviation) increases during extreme sentiment.
+
+ Conclusion:
+
+Market sentiment significantly impacts trader profitability.
+
+2.2 Behavioral Changes
+
+Trade frequency peaks during Fear.
+
+Position sizes increase significantly during Greed.
+
+Long bias increases in positive sentiment.
+
+Fear periods show cautious capital deployment.
+
+ Conclusion:
+
+Traders adjust risk exposure and activity based on sentiment.
+
+2.3gmentation
+
+Three key segments analyzed:
+
+Frequent vs Infrequent traders
+
+Consistent vs Inconsistent traders
+
+Risk exposure comparison across segments
+
+Insight:
+
+Behavioral patterns differ across trader types, suggesting strategy customization opportunities.
+
+ Actionable Output (Strategic Value)
+ Objective:
+
+Convert insights into practical trading rules.
+
+✅ Strategy 1 — Adaptive Position Sizing
+
+Increase capital exposure during Greed periods (higher profitability).
+Reduce exposure during Extreme Greed to prevent overconfidence-driven losses.
+
+✅ Strategy 2 — Volatility Capture During Fear
+
+Allow higher trade frequency during Fear periods.
+Keep position sizes smaller to control downside risk.
+
+ Overall Conclusion
+
+Market sentiment has a measurable impact on:
+
+Profitability
+
+Risk-taking behavior
+
+Trade frequency
+
+Capital allocation
+
+A sentiment-adaptive trading framework can improve risk-adjusted performance compared to static strategies.
+
+This Overview Covers
+
+Data Preparation
+Behavioral & Performance Analysis
+Strategic Application
+
+This is exactly what interviewers want.
